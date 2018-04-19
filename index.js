@@ -18,6 +18,11 @@ const colors = {
 // add source to config
 let source = fs.readFileSync(`./source.json`).toString(); 
 source = JSON.parse(source);
+
+if (!source.html || !source.subject || !source.css || !source.bodyPlain) {
+    throw new Error('Source files missed required fields, make sure it has subject, css, html and bodyplain included');
+}
+
 config.source = source;
 
 function setHTML(locales, browser){ 
