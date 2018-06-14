@@ -46,11 +46,11 @@ function setHTML(locales, browser){
        css.value = config.source.css;
 
    }, config, locale)
-   .pause(1000)
+   .pause(5000)
    .click('input#submit').then(function(){
        console.log(colors.yellow, `${locale.toUpperCase()}. Changed HTML / Subject / CSS / Plain text and Saved`);
    })
-   .pause(2000)
+   .pause(5000)
    .click('#tableVersions tbody tr:nth-child(1) td:nth-child(2) a').then(function(){
        console.log(colors.yellow, `${locale.toUpperCase()}. Release changed.`);
        console.log(colors.blue,`_____________________`);

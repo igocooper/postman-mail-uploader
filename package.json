@@ -1,0 +1,22 @@
+{
+  "name": "postman-mail-uploader",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/igocooper/postman-mail-uploader.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/igocooper/postman-mail-uploader/issues"
+  },
+  "homepage": "https://github.com/igocooper/postman-mail-uploader#readme",
+  "dependencies": {
+    "webdriverio": "^4.12.0"
+  }
+}
