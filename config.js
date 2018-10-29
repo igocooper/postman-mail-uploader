@@ -1,10 +1,9 @@
 var config  = {
-    template: '1669',
+    template: '1682',
     locales: ['en','cs','da','de','es','fi','fr','it','ja','ko','nl','no','pl','pt','ru','sv','tr','zh'],
     credentials: {
-        login: 'Test@gmail.com',
-        password: 'YourPassword'
-        
+        login: 'kilmer@zeoalliance.com',
+        password: 'Gfhjkm743345'
     }
 };
 
