@@ -48,7 +48,7 @@ function setHTML(locales, browser){
 
        // set css 
        var css = document.querySelector('#css');
-       css.value = config.source.css;
+       css.value = config.source.css[locale];
 
    }, config, locale)
    .pause(2000)
