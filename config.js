@@ -3,7 +3,7 @@ var config  = {
     locales: ['en','cs','da','de','es','fi','fr','it','ja','ko','nl','no','pl','pt','ru','sv','tr','zh'],
     credentials: {
         login: 'test@mail.com',
-        password: 'testpassword'
+        password: 'test'
         
     }
 };
