@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/igocooper/postman-mail-uploader.git"
+    "url": "git+https://github.com/killmer/postman-mail-uploader.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/igocooper/postman-mail-uploader/issues"
+    "url": "https://github.com/killmer/postman-mail-uploader/issues"
   },
-  "homepage": "https://github.com/igocooper/postman-mail-uploader#readme",
+  "homepage": "https://github.com/killmer/postman-mail-uploader#readme",
   "dependencies": {
     "webdriverio": "^4.12.0"
   }
