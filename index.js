@@ -18,6 +18,11 @@ const colors = {
 // add source to config
 let source = fs.readFileSync(`./source.json`).toString(); 
 source = JSON.parse(source);
+
+if (!source.html || !source.subject || !source.css || !source.bodyPlain) {
+    throw new Error('Source files missed required fields, make sure it has subject, css, html and bodyplain included');
+}
+
 config.source = source;
 
 function setHTML(locales, browser){ 
@@ -46,11 +51,11 @@ function setHTML(locales, browser){
        css.value = config.source.css;
 
    }, config, locale)
-   .pause(5000)
+   .pause(2000)
    .click('input#submit').then(function(){
        console.log(colors.yellow, `${locale.toUpperCase()}. Changed HTML / Subject / CSS / Plain text and Saved`);
    })
-   .pause(5000)
+   .pause(3000)
    .click('#tableVersions tbody tr:nth-child(1) td:nth-child(2) a').then(function(){
        console.log(colors.yellow, `${locale.toUpperCase()}. Release changed.`);
        console.log(colors.blue,`_____________________`);
